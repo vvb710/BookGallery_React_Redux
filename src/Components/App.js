@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { FormGroup, InputGroup, Button } from 'react-bootstrap';
 import Gallery from './Gallery';
 import getQuery from '../ActionCreators/getQuery';
-import { getResults } from '../ActionCreators/getResults';
+import getResults from '../ActionCreators/getResults';
 import { connect } from 'react-redux';
 import Spinner from './Spinner';
 

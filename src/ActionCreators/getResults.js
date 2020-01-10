@@ -1,7 +1,7 @@
 import { store } from '../store/store';
 import getLoading from './getLoading';
 
-export const getResults = (query) => {
+const getResults = (query) => {
 
     const BASE_URL = 'https://www.googleapis.com/books/v1/volumes?q=';
     store.dispatch(getLoading());
@@ -19,3 +19,5 @@ export const getResults = (query) => {
             }).catch(e => console.log("error"));
     };
 }
+
+export default getResults;

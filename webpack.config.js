@@ -20,13 +20,14 @@ module.exports = {
     },
     output: {
         path: __dirname + '/dist',
+        filename: 'bundle.js',
         publicPath: '/',
-        filename: 'bundle.js'
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin()
       ],
     devServer: {
+        historyApiFallback: true,
         contentBase: './dist',
         hot: true
     }
